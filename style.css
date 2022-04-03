@@ -1,0 +1,138 @@
+:root{
+    --backgroundTheme: #f5f5f5;
+    --sectionPadding: 0 7em;
+    --redColor: rgb(248, 68, 100);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+.header{
+    background-color: rgb(51, 53, 69);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sectionPadding);
+}
+.options{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    color:white;
+    margin-right: 20px;
+}
+.search{
+    width: 40em;
+    height: 2.5em;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    padding-left: 10px;
+}
+.sign-in-btn{
+    background-color: var(--redColor);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.more-options{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    color: rgb(204, 204, 204);
+    width: 15%;
+    right: 0;
+}
+.navbar{
+    background-color: rgb(34, 37, 57);
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sectionPadding);
+}
+a{
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    font-weight: lighter;
+    margin-right: 15px;
+    font-size: smaller;
+}
+a:last-child{
+    margin-right: 0;
+}
+.new-tag{
+    color: var(--redColor);
+    font-size: xx-small;
+}
+.carousel{
+    padding: 0 5em;
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+.movies-section{
+    padding: 2em 5em;
+    background-color: var(--backgroundTheme);
+}
+.movie-image{
+    width: 240px;
+    height: 400px;
+    border-radius: 10px;
+}
+.movie-image:hover{
+    transform: scaleX(1.05);
+}
+.movie-title{
+    font-weight: bold;
+}
+.section-title{
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  background-color: var(--backgroundTheme);
+  font-size: larger;
+  font-weight: bold;
+}
+.single-movie{
+    margin: 0 0.8em;
+    cursor: pointer;
+}
+#movie-details-modal{
+    display: none;
+    width: 75vw;
+    height: 85vh;
+    position: fixed;
+    border: 2px solid gray;
+    background-color: var(--backgroundTheme);
+    border-radius: 10px;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+    padding: 10px 20px;
+}
+.arrow-icons{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 2px;
+    background-color: var(--backgroundTheme);
+}
+.modal-close{
+    text-align: right;
+    cursor: pointer;
+}
+#modal-movie-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}

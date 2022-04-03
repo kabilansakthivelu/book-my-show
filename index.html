@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Book my show</title>
+  </head>
+  <body>
+
+    <!-- Header section -->
+    <div class="header">
+      <div class="options">
+        <h3 class="logo">book my show</h3>
+        <input type="text" class="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" />
+      </div>
+
+      <div class="more-options">
+        <p>Chennai</p>
+        <button class="sign-in-btn">Sign in</button>
+      </div>
+    </div>
+
+    <!-- Navbar section -->
+    <div class="navbar">
+      <div>
+        <a href="#">Movies</a>
+        <a href="#">Stream <sup class="new-tag">NEW</sup> </a>
+        <a href="#">Events</a>
+        <a href="#">Plays</a>
+        <a href="#">Sports</a>
+        <a href="#">Activities</a>
+        <a href="#">Buzz</a>
+      </div>
+      <div>
+        <a href="#">ListYourShow <sup class="new-tag">NEW</sup></a>
+        <a href="#">Corporates</a>
+        <a href="#">Office</a>
+        <a href="#">Gift Cards</a>
+      </div>
+    </div>
+
+    <!-- Carousel section -->
+    <div class="carousel">
+      <img src="./assets/chevron-left-solid.svg" id="left-icon" alt="left-carousel-icon" class="arrow-icons">
+      <img src="./assets/carousel-image_1.avif" id="carousel-image" class="1" />
+      <img src="./assets/chevron-right-solid.svg" id="right-icon" alt="right-carousel-icon" class="arrow-icons">
+    </div>
+
+    <!-- Movies section -->
+    <div class="movies-section" id="movies-section">
+
+      <!-- Modal section -->
+      <div class="modal" id="movie-details-modal">
+            <p onclick="closeModal()" class="modal-close">Close</p>
+            <img id="modal-movie-image" src="" alt="modal-movie-image">
+            <h1 id="modal-movie-title"></h1>
+            <p id="modal-movie-description"></p>
+            <p id="modal-movie-release-date"></p>
+            <p id="modal-movie-vote-average"></p>
+            <p id="modal-movie-vote-count"></p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
